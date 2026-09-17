@@ -13,7 +13,7 @@
 
     # Desktop
     alacritty
-    fuzzel
+    fuzzel j4-dmenu-desktop
     brightnessctl playerctl libnotify
     wayland-utils wev wl-clipboard xwayland-satellite
 
