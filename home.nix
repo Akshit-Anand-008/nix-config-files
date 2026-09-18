@@ -18,7 +18,9 @@
     wayland-utils wev wl-clipboard xwayland-satellite
 
     # Development
-    gcc gdb
+    gcc
+    gdb
+    cargo
     python3
     iverilog
     nasm
