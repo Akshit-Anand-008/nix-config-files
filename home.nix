@@ -20,18 +20,17 @@
     # Development
     gcc
     gdb
-    cargo
     python3
     iverilog
     nasm
 
-    # CLI Utilities
+    # Utilities
     (nnn.override { withNerdIcons = true; })
     bc lsd bat tealdeer
     fd file ripgrep
     unzip zip gzip
     jq curl
-    cmake gnumake
+    cmake gnumake cargo
     stow fzf tmux
     taskwarrior3 btop
 
