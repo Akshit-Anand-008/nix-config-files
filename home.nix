@@ -1,7 +1,6 @@
 { config, pkgs, inputs, ... }:
 
 {
-  imports = [ inputs.noctalia.homeModules.default ];
   home.username = "akshit";
   home.homeDirectory = "/home/akshit";
   home.stateVersion = "26.05";
@@ -14,6 +13,7 @@
     # Desktop
     alacritty
     fuzzel j4-dmenu-desktop
+    noctalia-shell
     brightnessctl playerctl libnotify
     wayland-utils wev wl-clipboard xwayland-satellite
 
@@ -47,5 +47,22 @@
     zathura kdePackages.okular
   ];
 
-  programs.noctalia-shell.enable = true;
+  programs.zsh = {
+    enable = true;
+    enableCompletion = true;
+    syntaxHighlighting.enable = true;
+    plugins = [
+      {
+        name = "fzf-tab";
+        src = pkgs.zsh-fzf-tab;
+        file = "share/fzf-tab/fzf-tab.plugin.zsh";
+      }
+      {
+        name = "zsh-vi-mode";
+        src = pkgs.zsh-vi-mode;
+        file = "share/zsh-vi-mode/zsh-vi-mode.plugin.zsh";
+      }
+    ];
+    initContent = "source /home/akshit/shellscripts/init.sh";
+  };
 }

@@ -84,12 +84,7 @@
   programs = {
     firefox.enable = true;
     niri.enable = true;
-    zsh = {
-      enable = true;
-      enableCompletion = true;
-      syntaxHighlighting.enable = true;
-      interactiveShellInit = "source ${pkgs.zsh-vi-mode}/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh";
-    };
+    zsh.enable = true;
   };
 
   system.stateVersion = "26.05";
