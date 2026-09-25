@@ -4,8 +4,7 @@
     home.username = "akshit";
     home.homeDirectory = "/home/akshit";
     home.stateVersion = "26.05";
-    home.packages = with pkgs; 
-    [
+    home.packages = with pkgs; [
         # Neovim
         neovim
         nil clang-tools lua-language-server
@@ -38,7 +37,6 @@
         # Aesthetics
         bibata-cursors
         nerd-fonts.jetbrains-mono
-        nerd-fonts.hack
         starship
 
         # Others
@@ -53,13 +51,11 @@
         enable = true;
         enableCompletion = true;
         syntaxHighlighting.enable = true;
-        plugins = [
-        {
+        plugins = [{
             name = "zsh-vi-mode";
             src = pkgs.zsh-vi-mode;
             file = "share/zsh-vi-mode/zsh-vi-mode.plugin.zsh";
-        }
-        ];
+        }];
         initContent = "source /home/akshit/shellscripts/init.sh";
     };
 }
