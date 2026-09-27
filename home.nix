@@ -17,9 +17,17 @@
         brightnessctl playerctl libnotify
         wayland-utils wev wl-clipboard xwayland-satellite
 
+        # Essentials
+        gdb
+        fd file ripgrep 
+        fzf
+        unzip zip gzip
+        jq curl
+        cmake gnumake 
+        cargo
+
         # Development
         gcc
-        gdb
         python3
         iverilog
         nasm
@@ -27,12 +35,8 @@
         # Utilities
         (nnn.override { withNerdIcons = true; })
         bc lsd bat tealdeer
-        fd file ripgrep
-        unzip zip gzip
-        jq curl
-        cmake gnumake cargo
-        stow fzf tmux
-        taskwarrior3 btop
+        stow btop tmux
+        taskwarrior3 super-productivity
 
         # Aesthetics
         bibata-cursors
