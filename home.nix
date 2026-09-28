@@ -31,16 +31,19 @@
         python3
         iverilog
         nasm
+        openjdk
 
         # Utilities
         (nnn.override { withNerdIcons = true; })
-        bc lsd bat tealdeer
+        bc fend
+        lsd bat tealdeer
         stow btop tmux
-        taskwarrior3 super-productivity
+        taskwarrior3
 
         # Aesthetics
         bibata-cursors
         nerd-fonts.jetbrains-mono
+        ibm-plex
         starship
 
         # Others
