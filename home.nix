@@ -21,6 +21,7 @@
         gdb
         fd file ripgrep 
         fzf
+        trash-cli
         unzip zip gzip
         jq curl
         cmake gnumake 
