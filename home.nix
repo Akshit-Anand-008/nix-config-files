@@ -43,7 +43,7 @@
         # Aesthetics
         bibata-cursors
         nerd-fonts.jetbrains-mono
-        ibm-plex
+        atkinson-hyperlegible-next
         starship
 
         # Others
