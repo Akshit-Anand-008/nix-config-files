@@ -79,6 +79,7 @@
 
     environment.systemPackages = with pkgs; [
         vim git wget
+        wayland-utils wev wl-clipboard xwayland-satellite xdg-desktop-portal
     ];
 
     programs = {

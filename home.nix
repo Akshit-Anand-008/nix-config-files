@@ -15,7 +15,6 @@
         fuzzel
         noctalia-shell
         brightnessctl playerctl libnotify
-        wayland-utils wev wl-clipboard xwayland-satellite
 
         # Essentials
         gdb
