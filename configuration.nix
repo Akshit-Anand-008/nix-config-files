@@ -15,9 +15,17 @@
     security.rtkit.enable = true;
 
     networking.hostName = "nixos";
-    networking.networkmanager.enable = true;
     networking.firewall.enable = true;
+    networking.networkmanager = {
+        enable = true;
+        wifi.powersave = false;
+        wifi.macAddress = "permanent";
+    };
+
     hardware.bluetooth.enable = true;
+    hardware.enableRedistributableFirmware = true;
+    hardware.wirelessRegulatoryDatabase = true;
+
     time.timeZone = "Asia/Kolkata";
 
     i18n.defaultLocale = "en_IN";

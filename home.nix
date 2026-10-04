@@ -11,9 +11,7 @@
         tree-sitter
 
         # Desktop
-        alacritty
-        fuzzel
-        noctalia-shell
+        alacritty fuzzel
         brightnessctl playerctl libnotify
 
         # Essentials
@@ -54,6 +52,7 @@
         zathura kdePackages.okular
     ];
 
+    programs.noctalia.enable = true;
     programs.zsh = {
         enable = true;
         enableCompletion = true;
